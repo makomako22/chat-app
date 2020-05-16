@@ -52,6 +52,10 @@ $chatcolorform: #d2d2d2;
 
 .side-bar__group-box {
   color: $whitecolor;
+  a {
+    color: $whitecolor;
+    text-decoration: none;
+  }
   &-name {
     padding: 20px 20px 5px 20px;
     font-size: 15px;
