@@ -108,6 +108,7 @@ $chatcolorform: #d2d2d2;
 .chat-main__message-list {
   height: calc(100vh - 190px);
   background-color: $chatcolormain;
+  overflow: scroll;
 }
 
 .message-box {
