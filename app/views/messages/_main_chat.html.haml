@@ -22,11 +22,10 @@
           2020年05月15日 15時32分
       .message-text
         てすと
-  .chat-main__message-form
+  = form_with model: [@group, @message], html: {class: "chat-main__message-form"},  local: true do |f|
     .message-form-box
-      .form-text
-        type a message
-      %label{class: "form-image"}
+      = f.text_field :content, class: 'form-text', placeholder: 'type a message'
+      = f.label :image, class: 'form-image' do
         = icon('far', 'image')
-        %input{type: "file",class: "input-btn"}
-    = link_to "Send", "#", class: "form-send"
+        = f.file_field :image, class: 'input-btn'
+    = f.submit 'Send', class: 'form-send'
