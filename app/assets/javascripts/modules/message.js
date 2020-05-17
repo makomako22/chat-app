@@ -1,8 +1,9 @@
 $(function(){
+
   function buildHTML(message){
     if ( message.image ) {
       let html =
-        `<div class="message-box">
+        `<div class="message-box" data-message-id=${message.id}>
           <div class="message-info">
             <div class="message-info__name">
               ${message.user_name}
@@ -19,7 +20,7 @@ $(function(){
       return html;
     } else {
       let html =
-      `<div class="message-box">
+      `<div class="message-box data-message-id=${message.id}">
         <div class="message-info">
           <div class="message-info__name">
             ${message.user_name}
@@ -58,4 +59,5 @@ $(function(){
       alert("メッセージ送信に失敗しました");
     });
   })
+
 });
