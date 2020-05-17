@@ -1,4 +1,4 @@
-.message-box
+.message-box{data: {message: {id: message.id}}}
   .message-info
     .message-info__name
       = message.user.name
@@ -7,4 +7,4 @@
   - if message.content.present?
     .message-text
       = message.content
-  = image_tag message.image.url if message.image.present?
+  = image_tag message.image.url, class: "message-image" if message.image.present?
