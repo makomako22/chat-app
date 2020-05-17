@@ -114,6 +114,7 @@ $chatcolorform: #d2d2d2;
 
 .message-box {
   padding-left: 40px;
+  margin-bottom: 46px;
 }
 
 .message-info {
@@ -134,7 +135,10 @@ $chatcolorform: #d2d2d2;
 .message-text {
   font-size: 14px;
   color: #434a54;
-  padding-bottom: 46px;
+}
+
+.message-image {
+  height: 300px;
 }
 
 .chat-main__message-form {
